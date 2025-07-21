@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="js/app.js" defer></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');</style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-50 bg-[#0a192f]/90 backdrop-blur-sm border-b border-[#233554]">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold gradient-text">&lt;WebDev/&gt;</a>
+                
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#home" class="nav-link text-sm font-medium transition">Home</a></li>
+                        <li><a href="#about" class="nav-link text-sm font-medium transition">About</a></li>
+                        <li><a href="#projects" class="nav-link text-sm font-medium transition">Projects</a></li>
+                        <li><a href="#achievements" class="nav-link text-sm font-medium transition">Achievements</a></li>
+                        <li><a href="#contact" class="nav-link text-sm font-medium transition">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+<nav id="mobileNav" class="md:hidden fixed top-0 left-0 w-full h-full bg-[#0a192f] z-40 flex flex-col items-center justify-center opacity-0 invisible transition-all duration-300">
+    <ul class="space-y-8 text-center">
+        <li><a href="#home" class="nav-link text-lg font-medium transition">Home</a></li>
+        <li><a href="#about" class="nav-link text-lg font-medium transition">About</a></li>
+        <li><a href="#projects" class="nav-link text-lg font-medium transition">Projects</a></li>
+        <li><a href="#achievements" class="nav-link text-lg font-medium transition">Achievements</a></li>
+        <li><a href="#contact" class="nav-link text-lg font-medium transition">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <p class="text-sm text-[#64ffda] mb-4">Hi, I'm</p>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Kim Gavilan</h1>
+                    <h2 class="text-3xl md:text-5xl font-bold text-[#8892b0] mb-6">I turn ideas into interactive web experiences.</h2>
+                    <p class="text-[#8892b0] mb-8 max-w-lg">
+                        I'm a curious and driven developer passionate about creating elegant, human-centered digital products that make an impact.
+                    </p>
+                    <button class="btn-primary px-6 py-3 rounded text-sm font-medium">
+                        <li><a href="#projects" class="nav-link text-sm font-medium transition">View My Works</a></li>
+                    </button>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-[#64ffda]">
+                            <img src="https://placehold.co/400x400" alt="Professional portrait of John Doe with a studio background, wearing formal attire" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-[#112240] p-4 rounded-lg shadow-lg w-48">
+                            
+                            <p class="text-sm font-large gradient-text"><#GrowEveryLine/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-[#112240]">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-16">
+                <h2 class="text-3xl font-bold text-white mr-4">
+                    <span class="text-[#64ffda]">.</span> About Me
+                </h2>
+                <div class="flex-1 h-px bg-[#233554]"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <p class="text-[#8892b0] mb-6">
+                        Hello! I'm Kim, a passionate web developer from the Philippines. I love crafting interactive, user-friendly websites and applications that make a difference. My journey began with curiosity for how the web works, and it quickly grew into a lifelong passion for building digital experiences.
+                    </p>
+                    <p class="text-[#8892b0] mb-6">
+                        Over the years, I've worked on a variety of projects, from small business sites to complex web apps. My focus is on creating accessible, inclusive, and high-performance products that delight users and solve real-world problems.
+                    </p>
+                    <p class="text-[#8892b0] mb-8">
+                        Here are a few tools and technologies I’ve been working with recently:
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-y-2 mb-8">
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>HTML &amp; CSS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>C#</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>Git &amp; GitHub</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary px-6 py-3 rounded text-sm font-medium">
+                        <a href="img/OriginalTemplate.odt" download="resume.odt">Download Resume</a>    
+                    </button>
+                </div>
+                
+                <div class="md:w-1/2 relative">
+                    <div class="rounded-lg overflow-hidden border border-[#233554]">
+                        <img src="https://placehold.co/600x400" alt="John Doe working at laptop in a modern home office with plants and minimal decor" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-16">
+                <h2 class="text-3xl font-bold text-white mr-4">
+                    <span class="text-[#64ffda]">.</span> Projects
+                </h2>
+                <div class="flex-1 h-px bg-[#233554]"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                               <!-- Project 1: Photoboot -->
+                <div class="project-card bg-[#112240] p-6 rounded-lg transition duration-300 hover:-translate-y-2 shadow-lg">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fas fa-folder text-[#64ffda] text-3xl"></i>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-[#8892b0] hover:text-[#64ffda] transition">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Photoboot</h3>
+                    <p class="text-[#8892b0] mb-4">A modern photo booth web app for capturing, editing, and sharing fun moments instantly.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs text-[#64ffda]">JavaScript</span>
+                        <span class="text-xs text-[#64ffda]">HTML5</span>
+                        <span class="text-xs text-[#64ffda]">CSS3</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary px-8 py-3 rounded text-sm font-medium">
+                    View All Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-[#112240]">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-16">
+                <h2 class="text-3xl font-bold text-white mr-4">
+                    <span class="text-[#64ffda]">.</span> Achievements
+                </h2>
+                <div class="flex-1 h-px bg-[#233554]"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-8">Education</h3>
+                    
+                    <div class="relative pl-8">
+                        <div class="timeline-item relative pb-8">
+                            <div class="absolute top-0 left-0 w-4 h-4 rounded-full bg-[#64ffda] -translate-x-1/2"></div>
+                            <div class="bg-[#0a192f] p-6 rounded-lg shadow-lg">
+                                <p class="text-sm text-[#64ffda] mb-2">2024 - Present</p>
+                                <h4 class="text-lg font-bold text-white mb-2">Bachelor of Science in Information Technology</h4>
+                                <p class="text-[#ccd6f6] mb-2">Mindoro State University</p>
+                                <p class="text-sm text-[#8892b0]">Specialized in Human-Computer Interaction and Web Technologies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item relative pb-8">
+                            <div class="absolute top-0 left-0 w-4 h-4 rounded-full bg-[#64ffda] -translate-x-1/2"></div>
+                            <div class="bg-[#0a192f] p-6 rounded-lg shadow-lg">
+                                <p class="text-sm text-[#64ffda] mb-2">2022 - 2024</p>
+                                <h4 class="text-lg font-bold text-white mb-2">Accountancy, Business, and Management</h4>
+                                <p class="text-[#ccd6f6] mb-2">PGC Memorial National HighSchool</p>
+                                <p class="text-sm text-[#8892b0]">Graduated with Honors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-8">Experience</h3>
+                    
+                    <div class="relative pl-8">
+                        <div class="timeline-item relative pb-8">
+                            <div class="absolute top-0 left-0 w-4 h-4 rounded-full bg-[#64ffda] -translate-x-1/2"></div>
+                            <div class="bg-[#0a192f] p-6 rounded-lg shadow-lg">
+                                <p class="text-sm text-[#64ffda] mb-2">2024 - Present</p>
+                                <h4 class="text-lg font-bold text-white mb-2">Freelance Web Developer</h4>
+                                <p class="text-[#ccd6f6] mb-2">Self-employed</p>
+                                <p class="text-sm text-[#8892b0]">Built responsive websites for small businesses and personal brands using HTML, Tailwind CSS, JavaScript, and C#. 
+            Collaborated directly with clients to design, develop, and deploy functional web solutions.
+        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- Awards -->
+                <div class="bg-[#0a192f] p-6 rounded-lg border border-[#233554]">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-award text-[#64ffda] text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white text-center mb-2">Awards</h3>
+                    <ul class="text-[#8892b0] text-sm space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span>With Honors</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#64ffda] mr-2">▹</span>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Certifications -->
+                <div class="bg-[#0a192f] p-6 rounded-lg border border-[#233554] max-w-4xl mx-auto">
+  <div class="flex flex-col md:flex-row items-start gap-6">
+    
+    <!-- Left: Image Slideshow -->
+    <div class="w-full md:w-1/2 flex flex-col items-center">
+      <img id="certImage" src="" alt="Certificate Image" class="w-full rounded-lg border border-[#233554] transition duration-500 mb-4">
+      
+      <!-- Controls -->
+      <div class="flex gap-4">
+        <button onclick="prevCert()" class="text-[#64ffda] border border-[#64ffda] px-3 py-1 rounded hover:bg-[#112240]">Prev</button>
+        <button onclick="nextCert()" class="text-[#64ffda] border border-[#64ffda] px-3 py-1 rounded hover:bg-[#112240]">Next</button>
+      </div>
+    </div>
+
+    <!-- Right: Static List of Certifications -->
+    <div class="w-full md:w-1/2">
+      <h3 class="text-lg font-bold text-white mb-4 text-center md:text-left">Certifications</h3>
+      <ul class="text-[#8892b0] text-sm space-y-2">
+        <li class="flex items-start"><span class="text-[#64ffda] mr-2">▹</span>Networking Basics</li>
+        <li class="flex items-start"><span class="text-[#64ffda] mr-2">▹</span>Introduction to Cybersecurity</li>
+        <li class="flex items-start"><span class="text-[#64ffda] mr-2">▹</span>Operating Systems Basics</li>
+        <li class="flex items-start"><span class="text-[#64ffda] mr-2">▹</span>Computer Hardware Basics</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+                
+                <!-- Skills -->
+                <div class="bg-[#0a192f] p-6 rounded-lg border border-[#233554]">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-chart-line text-[#64ffda] text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white text-center mb-2">Skills</h3>
+                    <div class="flex flex-wrap gap-2 mt-4 justify-center">
+                        <span class="text-xs bg-[#0f2d5b] text-[#64ffda] px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="text-xs bg-[#0f2d5b] text-[#64ffda] px-3 py-1 rounded-full">React</span>
+                        <span class="text-xs bg-[#0f2d5b] text-[#64ffda] px-3 py-1 rounded-full">UI/UX</span>
+                        <span class="text-xs bg-[#0f2d5b] text-[#64ffda] px-3 py-1 rounded-full">Node.js</span>
+                        <span class="text-xs bg-[#0f2d5b] text-[#64ffda] px-3 py-1 rounded-full">TypeScript</span>
+                        <span class="text-xs bg-[#0f2d5b] text-[#64ffda] px-3 py-1 rounded-full">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center mb-16">
+                <h2 class="text-3xl font-bold text-white mr-4">
+                    <span class="text-[#64ffda]">.</span> Contact
+                </h2>
+                <div class="flex-1 h-px bg-[#233554]"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-white mb-4">Get In Touch</h3>
+                    <p class="text-[#8892b0] mb-8">
+                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-[#64ffda] text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Email</h4>
+                                <a href="gavilankim2006@gmail.com" class="text-[#8892b0] hover:text-[#64ffda] transition">gavilankim@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-[#64ffda] text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Phone</h4>
+                                <a href="tel:+1234567890" class="text-[#8892b0] hover:text-[#64ffda] transition">+63 9925812969</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#64ffda] text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Location</h4>
+                                <p class="text-[#8892b0]">Naujan, Oriental Mindoro Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-6 mt-8">
+                        <a href="#" class="text-2xl text-[#8892b0] hover:text-[#64ffda] transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-[#8892b0] hover:text-[#64ffda] transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-[#8892b0] hover:text-[#64ffda] transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-2xl text-[#8892b0] hover:text-[#64ffda] transition">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm text-[#ccd6f6] mb-2">Name</label>
+                            <input type="text" id="name" class="w-full bg-[#0a192f] border border-[#233554] rounded-lg px-4 py-3 focus:outline-none focus:border-[#64ffda] text-white placeholder-[#495670]" placeholder="Your name">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm text-[#ccd6f6] mb-2">Email</label>
+                            <input type="email" id="email" class="w-full bg-[#0a192f] border border-[#233554] rounded-lg px-4 py-3 focus:outline-none focus:border-[#64ffda] text-white placeholder-[#495670]" placeholder="Your email">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm text-[#ccd6f6] mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full bg-[#0a192f] border border-[#233554] rounded-lg px-4 py-3 focus:outline-none focus:border-[#64ffda] text-white placeholder-[#495670]" placeholder="Subject">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm text-[#ccd6f6] mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-[#0a192f] border border-[#233554] rounded-lg px-4 py-3 focus:outline-none focus:border-[#64ffda] text-white placeholder-[#495670]" placeholder="Your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary px-8 py-3 rounded text-sm font-medium">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a192f] border-t border-[#233554] py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm text-[#8892b0]">&copy; 2024 GavilanKIm. All rights reserved.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-sm text-[#8892b0] hover:text-[#64ffda] transition">Privacy Policy</a>
+                    <a href="#" class="text-sm text-[#8892b0] hover:text-[#64ffda] transition">Terms of Service</a>
+                    <a href="#" class="text-sm text-[#8892b0] hover:text-[#64ffda] transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#112240] p-3 rounded-full border border-[#233554] opacity-0 invisible transition-all duration-300 hover:bg-[#0f2d5b] hover:border-[#64ffda]">
+        <i class="fas fa-arrow-up text-[#64ffda]"></i>
+    </button>
+
+    
+</body>
+</html>
